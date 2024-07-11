@@ -17,11 +17,10 @@ const Navbar = () => {
             </div>
             <button className="desktopMenuBtn">
                 <img src={contact} alt="" className="desktopMenuImg" />
-                Contact Me
+                Contato
             </button>
         </nav>
     )
-
 }
 
 export default Navbar;
