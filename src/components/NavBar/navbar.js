@@ -10,14 +10,13 @@ const Navbar = () => {
         <nav className="navbar">
             <img src={logo} alt="logo" className="logo" />
             <div className="desktop-menu">
-                <Link className="desktopMenuListItem">Home</Link>
-                <Link className="desktopMenuListItem">Sobre</Link>
-                <Link className="desktopMenuListItem">Portfolio</Link>
-                <Link className="desktopMenuListItem">Projetos</Link>
+                <Link to="intro" className="desktopMenuListItem" smooth={true} duration={500} >Home</Link>
+                <Link to="sobre" className="desktopMenuListItem" smooth={true} duration={500} >Sobre</Link>
+                <Link to="projetos" className="desktopMenuListItem" smooth={true} duration={500} >Projetos</Link>
             </div>
             <button className="desktopMenuBtn">
                 <img src={contact} alt="" className="desktopMenuImg" />
-                Contato
+                Entre em Contato
             </button>
         </nav>
     )

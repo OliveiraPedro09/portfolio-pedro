@@ -35,7 +35,11 @@
 }
 
 .introName{
-    color: #006DAA;
+    color: #006DAA; 
+    background-image: linear-gradient(45deg, #007ec6, #00315c);
+    -webkit-background-clip: text; 
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .introPara{
