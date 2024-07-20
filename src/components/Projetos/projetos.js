@@ -10,7 +10,7 @@ const Projetos = () => {
     }
 
     return(
-        <div className="projetos">
+        <div id="projetos" className="projetos">
             <div className="projetos-titulo">
                 <h1>Meus Projetos</h1>
                 <img className="pattern" src={pattern} alt="pattern" />

@@ -5,6 +5,7 @@
     margin: 0 auto;
     overflow: hidden;
     position: relative;
+    height: 100vh;
 }
 
 
@@ -30,7 +31,7 @@
 }
 
 .ola{
-    font-size: 1.75rem;
+    font-size: 2rem;
     font-weight: 100;
 }
 

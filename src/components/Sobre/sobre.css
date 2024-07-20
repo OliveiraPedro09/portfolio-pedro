@@ -8,15 +8,16 @@
     justify-content: center;
     text-align: center;
     margin: 0 auto;
+    height: 100vh;
 }
 .sobretitulo{
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 600;
-    padding-top: 2rem;
+    padding-top: 3rem;
     margin-bottom: 1rem;
 }
 .descricao{
-    font-size: 1.4rem;
+    font-size: 1rem;
     font-weight: 200;
     max-width: 50rem;
     padding: 0 1rem;

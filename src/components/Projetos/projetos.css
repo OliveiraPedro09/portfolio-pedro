@@ -3,8 +3,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 80px;
-    margin: 80px 170px
+    gap: 30px;
+    margin: 30px 100px;
+    height: 100vh;
 }
 
 .projetos-titulo{
@@ -13,6 +14,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-top: 10%;
 }
 .projetos-titulo h1{
     padding: 0px 30px;
@@ -26,12 +28,11 @@
 }
 .projetos-container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.5fr 0.5fr;
     gap: 30px;
-    
 }
 .imgs{
-    width: 419px;
+    width: 400px;
     height: 280px;
     border-radius: 1rem;
     box-sizing: border-box;
@@ -52,14 +53,14 @@
     margin: auto;
     justify-content: center;
     align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    border: 2px solid white;
+    padding: 15px 30px;
+    font-weight: 500;
+    transition: 0.6s;
 }
 .projetos-mais:hover{
-    color: #006DAA;
-    padding-bottom: 0.5rem;
-    border-bottom: 3px solid #006DAA;
-    transition: 0.3s;
-    transform: scale(1.1);
-}
-.mostrar{
-    padding: 0 15px ;
+    gap: 20px;
+    transition: 0.6s;
 }
