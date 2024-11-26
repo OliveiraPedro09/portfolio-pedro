@@ -17,6 +17,7 @@
     padding: 0px 30px;
     font-size: 3rem;
     font-weight: 600;
+    color: whitesmoke;
 }
 
 .contatoContainer {
@@ -34,16 +35,16 @@
     text-align: center; /* Centralize o texto */
 }
 
-.contatoLeft h1 {
+.contatoSection h1 {
     font-size: 3rem;
     font-weight: 700;
-    background: linear-gradient(90deg, #5271FF 30%, #C1FF72 100%) !important;
+    background: linear-gradient(90deg, #5271FF 30%, #C1FF72 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.contatoLeft p {
+.contatoSection p {
     max-width: 550px;
     color: whitesmoke;
     font-size: 20px;
