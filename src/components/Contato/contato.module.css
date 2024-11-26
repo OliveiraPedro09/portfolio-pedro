@@ -1,0 +1,177 @@
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 20px; /* Ajuste a margem para telas menores */
+    height: auto; /* Ajuste a altura para auto */
+}
+
+.contatoTitulo {
+    position: relative;
+    text-align: center; /* Centralize o título */
+}
+
+.contatoTitulo h1 {
+    padding: 0px 30px;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.contatoContainer {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap; /* Permita que os elementos se ajustem em telas menores */
+    justify-content: center; /* Centralize os elementos */
+}
+
+.contatoSection {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 600px; /* Defina uma largura máxima */
+    text-align: center; /* Centralize o texto */
+}
+
+.contatoLeft h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, #5271FF 30%, #C1FF72 100%) !important;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contatoLeft p {
+    max-width: 550px;
+    color: whitesmoke;
+    font-size: 20px;
+    line-height: 35px;
+    margin: 0 auto; /* Centralize o parágrafo */
+}
+
+.contatoDetails {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    color: whitesmoke;
+    font-size: 22px;
+}
+
+.contatoDetails img {
+    width: 35px;
+    height: 35px;
+}
+
+.contatoDetail {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center; /* Centralize os detalhes */
+}
+
+.contatoForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 600px; /* Defina uma largura máxima */
+}
+
+.contatoForm .form-control {
+    width: 100%;
+    padding: 20px;
+    border-radius: 4px;
+    background: #32323c;
+    color: #a0a0a0;
+    font-family: Outfit;
+    font-size: 16px;
+}
+
+.contatoForm .floatingLabel {
+    width: 100%;
+}
+
+.contatoForm .floatingLabel label {
+    color: black;
+}
+
+.botaoEnviar {
+    border: none;
+    color: white;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #5271FF 30%, #C1FF72 100%);
+    font-size: 22px;
+    padding: 20px 60px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botaoEnviar:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+/* Media Queries para responsividade */
+@media screen and (max-width: 1024px) {
+    .contatoContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .contatoLeft h1 {
+        font-size: 2.5rem;
+    }
+
+    .contatoLeft p {
+        font-size: 18px;
+    }
+
+    .contatoDetails {
+        font-size: 20px;
+    }
+
+    .contatoForm {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contatoLeft h1 {
+        font-size: 2rem;
+    }
+
+    .contatoLeft p {
+        font-size: 16px;
+    }
+
+    .contatoDetails {
+        font-size: 18px;
+    }
+
+    .contatoForm {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contatoLeft h1 {
+        font-size: 1.5rem;
+    }
+
+    .contatoLeft p {
+        font-size: 14px;
+    }
+
+    .contatoDetails {
+        font-size: 16px;
+    }
+
+    .contatoForm {
+        width: 100%;
+    }
+}

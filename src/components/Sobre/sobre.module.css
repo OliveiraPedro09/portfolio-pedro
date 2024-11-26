@@ -1,4 +1,4 @@
-#sobre{
+#sobre {
     overflow: hidden;
     width: 100vw;
     max-width: 65rem;
@@ -10,52 +10,73 @@
     margin: 0 auto;
     height: 100vh;
 }
-.sobretitulo{
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sobretitulo {
     font-size: 2rem;
     font-weight: 600;
     padding-top: 3rem;
     margin-bottom: 1rem;
 }
-.descricao{
+
+.descricao {
     font-size: 1rem;
     font-weight: 200;
     max-width: 50rem;
     padding: 0 1rem;
 }
-.quadrat{
-    margin: 1.5rem ;
+
+.quadrat {
+    margin: 1.5rem;
     width: 100vw;
     max-width: 80%;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
 }
-.quadrat1{
+
+.quadrat1 {
     display: flex;
     margin: 1rem;
     padding: 1.5rem;
     border-radius: 0.5rem;
-    background-color: rgba(50, 50 ,50);
+    background-color: rgba(50, 50, 50);
 }
 
-.quadratImg{
+.quadratImg {
     object-fit: cover;
     height: 5rem;
     width: 5rem;
     margin-right: 2rem;
 }
 
-.quadratText>p{
+.quadratText > p {
     font-size: 0.9rem;
     font-weight: 200;
+    color: whitesmoke;
 }
 
-@media screen and (max-width:720px){
-    .quadratText>p{
+.quadratText h2{
+    color: whitesmoke;
+}
+
+@media screen and (max-width: 720px) {
+    .quadratText > p {
         font-size: 2vw;
     }
-    .descricao{
+    .descricao {
         font-size: 2vw;
     }
-    .sobretitulo{
+    .sobretitulo {
         font-size: 4vw;
     }
 }
