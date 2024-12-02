@@ -58,6 +58,7 @@ const Projetos = () => {
                         <p>{selectedProject.description}</p>
                         <img src={selectedProject.p_img} alt={selectedProject.p_nome} style={{ width: '100%' }} />
                         <p>{selectedProject.descricao}</p>
+                        <p>{selectedProject.contribuicao}</p>
                         <p>{selectedProject.soft_skills}</p>
                         <p>{selectedProject.hard_skills}</p>
                     </Modal.Body>
