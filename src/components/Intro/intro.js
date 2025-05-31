@@ -35,7 +35,7 @@ const Intro = () => {
                     <div className={styles.headingContainer}>
                         <span className={styles.ola}>Olá, Mundo!</span>
                         <h1 className={styles.introText}>
-                            Eu sou <span className={styles.introName}>Pedro Oliveira</span>
+                           <span className={styles.iam} > Eu sou </span><span className={styles.introName}>Pedro Oliveira</span>
                         </h1>
                     </div>
                     
