@@ -11,7 +11,7 @@ import { Link } from "react-scroll";
 const Projetos = () => {
     const [show, setShow] = useState(false);
     const [selectedProject, setSelectedProject] = useState(null);
-    const [visibleProjects, setVisibleProjects] = useState(4); 
+    const [visibleProjects, setVisibleProjects] = useState(6); 
     const [isVisible, setIsVisible] = useState(false);
     
     useEffect(() => {
@@ -88,7 +88,6 @@ const Projetos = () => {
                     </div>
                 </div>
             </div>
-
             <Link to="contato" smooth={true} duration={600} className={styles.scrollIndicator}>
                 <FaChevronDown className={styles.scrollIcon} />
                 <span className={styles.scrollText}>Rolar para baixo</span>

@@ -1,7 +1,7 @@
 .projetosSection {
     position: relative;
     min-height: 100vh;
-    padding: 7rem 0 5rem;
+    padding: 7rem 0 7rem; 
     background-color: #f8f9fa;
     display: flex;
     flex-direction: column;
@@ -169,9 +169,12 @@
     font-size: 1.1rem;
     cursor: pointer;
     margin: 0 auto;
+    margin-bottom: 5rem;
     max-width: fit-content;
     box-shadow: 0 8px 15px rgba(0, 112, 243, 0.2);
     transition: all 0.3s ease;
+    position: relative;
+    z-index: 20;
 }
 
 .projetosMais:hover {
@@ -300,7 +303,7 @@
 
 .scrollIndicator {
     position: absolute;
-    bottom: 2.5rem;
+    bottom: 1.5rem; 
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -374,58 +377,26 @@
     .modalDescription h4 {
         font-size: 1.3rem;
     }
+    
+    .projetosMais {
+        margin-bottom: 4rem;
+    }
+    
+    .scrollIndicator {
+        bottom: 1rem;
+    }
+    
+    .projetosSection {
+        padding: 5rem 0 6rem;
+    }
 }
 
 @media screen and (max-width: 576px) {
     .projetosSection {
-        padding: 5rem 0 4rem;
-    }
-    
-    .container {
-        padding: 0 1.5rem;
-    }
-    
-    .projetosContainer {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-    
-    .projetosTitulo {
-        margin-bottom: 3rem;
-    }
-    
-    .projetosTitulo h2 {
-        font-size: 2rem;
-    }
-    
-    .cardImageContainer {
-        height: 200px;
+        padding: 5rem 0 5rem;
     }
     
     .projetosMais {
-        font-size: 1rem;
-        padding: 0.8rem 1.8rem;
-    }
-    
-    .modalDialog {
-        margin: 0.5rem;
-    }
-    
-    .modalHeader {
-        padding: 1rem;
-    }
-    
-    .modalBody {
-        padding: 1.5rem;
-    }
-    
-    .modalFooter {
-        padding: 1rem 1.5rem;
-        flex-direction: column;
-        gap: 0.8rem;
-    }
-    
-    .modalCloseBtn, .modalViewBtn {
-        width: 100%;
+        margin-bottom: 3.5rem;
     }
 }
