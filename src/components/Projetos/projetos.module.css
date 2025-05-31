@@ -199,7 +199,6 @@
     filter: brightness(0) invert(1);
 }
 
-/* Modal Styling */
 .modalDialog {
     max-width: 800px;
 }
@@ -299,7 +298,6 @@
     cursor: not-allowed;
 }
 
-/* Scroll indicator */
 .scrollIndicator {
     position: absolute;
     bottom: 2.5rem;
@@ -344,7 +342,6 @@
     }
 }
 
-/* Responsiveness */
 @media screen and (max-width: 1024px) {
     .projetosContainer {
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));

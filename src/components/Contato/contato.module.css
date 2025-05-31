@@ -4,13 +4,13 @@
     align-items: center;
     justify-content: center;
     gap: 80px;
-    margin: 80px 20px; /* Ajuste a margem para telas menores */
-    height: auto; /* Ajuste a altura para auto */
+    margin: 80px 20px;
+    height: auto;
 }
 
 .contatoTitulo {
     position: relative;
-    text-align: center; /* Centralize o título */
+    text-align: center; 
 }
 
 .contatoTitulo h1 {
@@ -275,7 +275,6 @@
     }
 }
 
-/* Media Queries para responsividade */
 @media screen and (max-width: 1024px) {
     .contatoContainer {
         flex-direction: column;

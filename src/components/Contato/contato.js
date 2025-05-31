@@ -7,7 +7,7 @@ import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 const Contato = () => {
     const [formStatus, setFormStatus] = useState({
         message: "",
-        type: "", // success, error, sending
+        type: "",
         show: false
     });
     const [formData, setFormData] = useState({
@@ -21,12 +21,10 @@ const Contato = () => {
     const [cooldownTime, setCooldownTime] = useState(0);
     const [isVisible, setIsVisible] = useState(false);
     
-    // Efeito para animação de entrada
     useEffect(() => {
         setIsVisible(true);
     }, []);
     
-    // Gerenciador de cooldown
     useEffect(() => {
         let timer;
         if (cooldown && cooldownTime > 0) {
@@ -47,7 +45,6 @@ const Contato = () => {
             [name]: value
         });
         
-        // Limpa o erro do campo quando o usuário começa a digitar
         if (errors[name]) {
             setErrors({
                 ...errors,
@@ -121,18 +118,15 @@ const Contato = () => {
                     show: true
                 });
                 
-                // Limpar formulário
                 setFormData({
                     name: "",
                     email: "",
                     mensagem: ""
                 });
                 
-                // Configurar cooldown de 60 segundos
                 setCooldown(true);
                 setCooldownTime(60);
                 
-                // Esconder a mensagem após 5 segundos
                 setTimeout(() => {
                     setFormStatus(prev => ({...prev, show: false}));
                 }, 5000);

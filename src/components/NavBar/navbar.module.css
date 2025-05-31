@@ -133,7 +133,6 @@
     font-size: 1.4rem;
 }
 
-/* Media Queries */
 @media screen and (max-width: 768px) {
     .navbar {
         padding: 0 1.5rem;

@@ -36,11 +36,30 @@
     width: 100%;
     margin: 0 auto;
     padding: 0 1.5rem;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.sobreContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.sobreInfo {
+    flex: 1;
 }
 
 .sobreHeader {
-    margin-bottom: 3rem;
-    text-align: center;
+    margin-bottom: 2rem;
+    text-align: left;
 }
 
 .sobretitulo {
@@ -59,8 +78,7 @@
     height: 4px;
     background: linear-gradient(90deg, #0070f3, #00c9ff);
     bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
     border-radius: 2px;
 }
 
@@ -68,49 +86,46 @@
     font-size: 1.1rem;
     line-height: 1.8;
     color: #555;
-    max-width: 800px;
-    margin: 0 auto;
 }
 
-.quadrat {
-    margin: 1.5rem;
-    width: 100vw;
-    max-width: 80%;
-    text-align: left;
+.profileImageContainer {
+    flex: 0 0 300px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    margin-left: 10%;
+    align-items: center;
 }
 
-.quadrat1 {
-    display: flex;
-    margin: 1rem;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    background-color: rgba(50, 50, 50);
+.profileImageWrapper {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    padding: 5px;
+    background: linear-gradient(90deg, #0070f3, #00c9ff);
+    box-shadow: 0 10px 30px rgba(0, 112, 243, 0.2);
+    animation: pulse 3s infinite ease-in-out;
 }
 
-.quadratImg {
+.profileImage {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
     object-fit: cover;
-    height: 5rem;
-    width: 5rem;
-    margin-right: 2rem;
 }
 
-.quadratText > p {
-    font-size: 0.9rem;
-    font-weight: 200;
-    color: whitesmoke;
-}
-
-.quadratText h2{
-    color: whitesmoke;
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 112, 243, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(0, 112, 243, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 112, 243, 0);
+    }
 }
 
 .techSection {
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
 
 .techTitle {
@@ -129,7 +144,6 @@
     margin-right: auto;
 }
 
-/* Estilos para o indicador de rolagem */
 .scrollIndicator {
     position: absolute;
     bottom: 2.5rem;
@@ -141,7 +155,7 @@
     cursor: pointer;
     animation: bounce 2s infinite;
     text-decoration: none;
-    z-index: 10;  /* Para garantir que fique acima de outros elementos */
+    z-index: 10; 
 }
 
 .scrollIcon {
@@ -174,42 +188,52 @@
     }
 }
 
-@media screen and (max-width: 720px) {
-    .quadratText > p {
-        font-size: 2vw;
+@media screen and (max-width: 1024px) {
+    .sobreContent {
+        gap: 2rem;
     }
-    .descricao {
-        font-size: 2vw;
-    }
-    .sobretitulo {
-        font-size: 4vw;
+    
+    .profileImageWrapper {
+        width: 240px;
+        height: 240px;
     }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+    .sobreContent {
+        flex-direction: column-reverse;
+    }
+    
+    .sobreHeader {
+        text-align: center;
+    }
+    
+    .sobretitulo::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .profileImageContainer {
+        margin-bottom: 2rem;
+    }
+    
+    .profileImageWrapper {
+        width: 220px;
+        height: 220px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .profileImageWrapper {
+        width: 180px;
+        height: 180px;
+    }
+    
     .sobretitulo {
         font-size: 2rem;
     }
     
     .descricao {
         font-size: 1rem;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .resp {
-        padding: 2rem 0;
-    }
-    
-    .introText {
-        font-size: 2.8rem;
-    }
-    
-    .typingText {
-        font-size: 1.8rem;
-    }
-    
-    .animationContainer {
-        height: 400px;
     }
 }
