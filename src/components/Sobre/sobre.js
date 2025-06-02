@@ -46,12 +46,19 @@ const Sobre = () => {
                     
                     <TechCarousel />
                 </div>
+                
+                <div className={styles.scrollIndicatorWrapper}>
+                    <Link 
+                        to="projetos" 
+                        smooth={true} 
+                        duration={600} 
+                        className={styles.scrollIndicator}
+                    >
+                        <FaChevronDown className={styles.scrollIcon} />
+                        <span className={styles.scrollText}>Rolar para baixo</span>
+                    </Link>
+                </div>
             </div>
-            
-            <Link to="projetos2" smooth={true} duration={600} className={styles.scrollIndicator}>
-                <FaChevronDown className={styles.scrollIcon} />
-                <span className={styles.scrollText}>Rolar para baixo</span>
-            </Link>
         </section>
     )
 }
