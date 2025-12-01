@@ -3,6 +3,7 @@ import img2 from '../assets/HelpDesk.jpeg';
 import img3 from '../assets/fapg.jpeg';
 import img4 from '../assets/pricesearch.jpg';
 import img5 from '../assets/tecsus.jpg';
+import img6 from '../assets/img6.jpeg';
 
 const projetos_data = [
     {
@@ -54,6 +55,16 @@ const projetos_data = [
         soft_skills: "SOFT SKILLS: Durante o desenvolvimento deste sistema, aprendi a importância de uma boa comunicação entre as equipes envolvidas, especialmente entre os desenvolvedores e os usuários finais. A colaboração foi essencial para garantir que o sistema atendesse às expectativas e fosse fácil de usar. Além disso, tive que lidar com desafios técnicos relacionados à integração de diferentes componentes do sistema, o que me ajudou a desenvolver habilidades de resolução de problemas e adaptação.",
         hard_skills: "HARD SKILLS: Python FastAPI, Postgres, MongoDB, GitHub, Github Actions, Docker, Github Projects, React, Typescript, SonarQube, Prometheus",
         link: 'https://github.com/Code-Nine-FTC/API-2025.1'
+    },
+    {
+        p_no: 6,
+        p_nome: "Administração Guarnição Militar",
+        p_img: img6,
+        descricao: "Desenvolvi um sistema de administração para guarnições militares, permitindo o gerenciamento eficiente de recursos, pessoal e operações. O sistema foi projetado para ser seguro e fácil de usar.",
+        contribuicao: "Contribuições Pessoais: Desenvolvedor - Fui responsável pela implementação do sistema web, utilizando tecnologias modernas para garantir a segurança e eficiência do gerenciamento. Também participei da definição das funcionalidades e do fluxo de trabalho do sistema. Fiz a implementação e lógica de IA para previsão de consumo e estoque de materiais.",
+        soft_skills: "SOFT SKILLS: Durante o desenvolvimento deste sistema, aprendi a importância de entender as necessidades específicas do ambiente militar e adaptar o produto para atender a essas demandas. A comunicação clara e objetiva foi fundamental para garantir que o sistema fosse intuitivo e fácil de usar. Além disso, tive que lidar com desafios técnicos relacionados à segurança dos dados, o que me ajudou a desenvolver habilidades de resolução de problemas.",
+        hard_skills: "HARD SKILLS: Java, Spring Boot, Python, TypeScript, Vue, PostgreSQL, GitHub",
+        link: 'https://github.com/Code-Nine-FTC/API-2025.2'
     }
 ];
 
