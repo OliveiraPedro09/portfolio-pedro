@@ -60,7 +60,7 @@ const projetos_data = [
         p_no: 6,
         p_nome: "Administração Guarnição Militar",
         p_img: img6,
-        descricao: "Desenvolvi um sistema de administração para guarnições militares, permitindo o gerenciamento eficiente de recursos, pessoal e operações. O sistema foi projetado para ser seguro e fácil de usar.",
+        descricao: "Desenvolvemos um sistema de administração para guarnições militares, permitindo o gerenciamento eficiente de recursos, pessoal e operações. O sistema foi projetado para ser seguro e fácil de usar.",
         contribuicao: "Contribuições Pessoais: Desenvolvedor - Fui responsável pela implementação do sistema web, utilizando tecnologias modernas para garantir a segurança e eficiência do gerenciamento. Também participei da definição das funcionalidades e do fluxo de trabalho do sistema. Fiz a implementação e lógica de IA para previsão de consumo e estoque de materiais.",
         soft_skills: "SOFT SKILLS: Durante o desenvolvimento deste sistema, aprendi a importância de entender as necessidades específicas do ambiente militar e adaptar o produto para atender a essas demandas. A comunicação clara e objetiva foi fundamental para garantir que o sistema fosse intuitivo e fácil de usar. Além disso, tive que lidar com desafios técnicos relacionados à segurança dos dados, o que me ajudou a desenvolver habilidades de resolução de problemas.",
         hard_skills: "HARD SKILLS: Java, Spring Boot, Python, TypeScript, Vue, PostgreSQL, GitHub",
